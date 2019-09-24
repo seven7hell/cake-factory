@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cake Factory</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+	 	<div class="container">
+    	<a class="navbar-brand" href="index.html">
+    		<img src="logo.png" alt="logo" style="height: 100px;">
+    	</a>
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        	<span class="navbar-toggler-icon"></span>
+        </button>
+    	<div class="collapse navbar-collapse" id="navbarResponsive">
+      		<ul class="navbar-nav ml-auto">
+        		<li class="nav-item m-2">
+          			<a class="nav-link active" href="#">About Us</a>
+        		</li>
+        		<li class="nav-item m-2">
+          			<a class="nav-link" href="#" data-toggle="modal" data-target="#orderModal">Order Now</a>
+        		</li>
+      		</ul>
+    	</div>
+	  </div>
+	</nav>
+
+	<div class="container p-md-5 p-3">
+    <h2 class="text-center">About Us</h2>
+    <hr class="headline mb-5">
+    <div class="row mb-5">
+      <div class="col-md-6 in-left">
+        <h3 class="mb-3">Our Story</h3>
+        <hr class="textline" align="left">
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="col-md-6 in-right" style="display: block; margin: auto;">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/08/24/bakery-1868396_1280.jpg" class="img-fluid rounded">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 in-left">
+        <h4>Our Vision</h4>
+        <hr class="textline" align="left">
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="col-md-6 in-right">
+        <h4>Our Mission</h4>
+        <hr class="textline" align="left">
+        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="orderModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <form action="order.php" method="POST">
+          <div class="modal-header">
+            <h4 class="modal-title">Make your order</h4>
+          </div>
+          <div class="modal-body">
+            <h5>Choose cake:</h5>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-2">
+                <h5 class="text-center">Cake 1</h5>
+                <label class="radio-img">
+                    <input type="radio" name="cost" value="300" required >
+                    <img src="assets/cake4.jpg" class="img-fluid">
+                  </label>
+                  <h6 class="text-center mt-2"><i class="fas fa-rupee-sign"></i> 300 (per kg)</h6>
+              </div>
+              <div class="col-2">
+                <h5 class="text-center">Cake 2</h5>
+                <label class="radio-img">
+                    <input type="radio" name="cost" value="400" required >
+                    <img src="assets/cake5.jpg" class="img-fluid">
+                </label>
+                  <h6 class="text-center mt-2"><i class="fas fa-rupee-sign"></i> 400 (per kg)</h6>
+              </div>
+              <div class="col-2">
+                <h5 class="text-center">Cake 3</h5>
+                <label class="radio-img">
+                    <input type="radio" name="cost" value="500" required >
+                    <img src="assets/cake6.jpg" class="img-fluid">
+                </label>
+                  <h6 class="text-center mt-2"><i class="fas fa-rupee-sign"></i> 500 (per kg)</h6>
+              </div>
+              <div class="col-2">
+                <h5 class="text-center">Cake 4</h5>
+                <label class="radio-img">
+                    <input type="radio" name="cost" value="600" required >
+                    <img src="assets/cake7.jpg" class="img-fluid">
+                </label>
+                  <h6 class="text-center mt-2"><i class="fas fa-rupee-sign"></i> 600 (per kg)</h6>
+              </div>
+              <div class="col-2">
+                <h5 class="text-center">Cake 5</h5>
+                <label class="radio-img">
+                    <input type="radio" name="cost" value="700" required >
+                    <img src="assets/cake8.jpg" class="img-fluid">
+                </label>
+                  <h6 class="text-center mt-2"><i class="fas fa-rupee-sign"></i> 700 (per kg)</h6>
+              </div>
+            </div>
+            <br>
+            <h5>Select weight:</h5>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-2">
+                <label class="radio-img">
+                    <input type="radio" name="weight" value="0.5" required >
+                    <div class="rounded-circle bg-dark text-white p-5">
+                      <h6 class="text-center mt-2">0.5 Kg</h6>
+                    </div>
+                  </label>
+              </div>
+              <div class="col-2">
+                <label class="radio-img">
+                    <input type="radio" name="weight" value="1" required >
+                    <div class="rounded-circle bg-dark text-white p-5">
+                      <h6 class="text-center mt-2">1 Kg</h6>
+                    </div>
+                  </label>
+              </div>
+              <div class="col-2">
+                <label class="radio-img">
+                    <input type="radio" name="weight" value="2" required >
+                    <div class="rounded-circle bg-dark text-white p-5">
+                      <h6 class="text-center mt-2">2 Kg</h6>
+                    </div>
+                  </label>
+              </div>
+              <div class="col-2">
+                <label class="radio-img">
+                    <input type="radio" name="weight" value="3" required >
+                    <div class="rounded-circle bg-dark text-white p-5">
+                      <h6 class="text-center mt-2">3 Kg</h6>
+                    </div>
+                  </label>
+              </div>
+              <div class="col-2">
+                <label class="radio-img">
+                    <input type="radio" name="weight" value="5" required >
+                    <div class="rounded-circle bg-dark text-white p-5">
+                      <h6 class="text-center mt-2">5 Kg</h6>
+                    </div>
+                  </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <h5 class="mr-auto">Total Amount: <i class="fas fa-rupee-sign"></i> <input type="number" name="total" id="total" class="border-0"></h5>
+            <button type="submit" class="btn btn-success" disabled>Place Order</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+      </div>
+  </div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/main.js"></script>
+</body>
+</html>
